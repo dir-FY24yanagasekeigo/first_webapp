@@ -4,15 +4,15 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-
-    <head>
-        <meta charset = "UTF-8">
-        <title>クエリパラメータのテスト</title>
-    </head>
     
+    <head>
+        <meta charset="UTF-8">
+        <title>セッションスコープのテスト</title>
+    </head>
+
     <body>
-        <p>送信パラメータ : <%= request.getAttribute("q") %></p>
-        <p>送信パラメータ : <c:out value="${q}" /></p>
-        <p>送信パラメータ : ${q}</p>
+        <h1>こんにちは、<c:out value="${sessionScope.username}" />!</h1>
+        <p><a href="session_c.jsp">次のページへ</a>
     </body>
+
 </html>

@@ -11,6 +11,6 @@
     </head>
 
     <body>
-        <h1><%= app_name %></h1>
+        <h1><c:out value="${applicationScope.app_name}" /></h1>
     </body>
 </html>
