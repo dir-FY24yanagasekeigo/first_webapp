@@ -32,7 +32,7 @@ public class LogFilter extends HttpFilter implements Filter {
         chain.doFilter(request, response);
         
 		// アクセスされた場所と日時を記録する
-		System.out.println(((HttpServletRequest)request).getRequestURI() + ":" +LocalDateTime.now());
+		System.out.println(((HttpServletRequest)request).getRequestURI() + " : " +LocalDateTime.now());
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
